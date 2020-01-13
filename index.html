@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Don't say a letter</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Speech to Text</h1>
+  <p>Press the button to start voice recognition.</p>
+  <table align="center">
+    <tr>
+      <td>
+        <div class="gridContainer">
+          <div class="gridStart">
+            <button class="btnStart" onclick="start()">Start listening</button>
+          </div>
+          <div class="gridStop">
+            <button class="btnStop" onclick="stop()">Stop</button>
+          </div>
+          <div class="gridPhrase">
+            <p class="phrase">What letter to avoid (click on start)</p>
+          </div>
+          <div class="gridResult">
+            <p class="result"><img src="images/greyCircle.png" width="100px" height="auto"></p>
+          </div>
+          <div class="gridOutput">
+            <p class="output">...</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <br><br>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

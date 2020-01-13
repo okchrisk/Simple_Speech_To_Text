@@ -1,0 +1,48 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
+  grid-template-areas: 
+    " gstart gstop "
+    "  gphrase gphrase "
+    " gresult gresult "
+    "  goutput goutput "
+  ;
+}
+
+.gridStart{
+  grid-area: gstart;
+}
+.gridStop{
+  grid-area: gstop;
+}
+.gridPhrase{
+  grid-area: gphrase;
+}
+.gridResult{
+  grid-area: gresult;
+}
+.gridOutput{
+  grid-area: goutput;
+}
+
+body, html {
+  text-align: center;
+  margin: 0;
+  background-color: teal;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  font-size: 1.1rem;
+  width: 170px;
+  line-height: 2;
+  margin-top: 30px;
+}
+table{
+  border: thin solid black;
+}
+
